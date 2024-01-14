@@ -3,10 +3,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 60px;
+    min-height: 80px;
     position: sticky;
     top: 0;
-    width: 100vw;
+    width: 40vw;
+    border-radius: 49% 51% 100% 0% / 0% 0% 100% 100% ;
+    opacity: 0.9;
 
     .navMenu {
         min-width: 100%;
@@ -17,7 +19,7 @@
         position: fixed;
         list-style: none;
         left: -100%;
-        top: 61px;
+        top: 81px;
         gap: 0;
         background-color: $secondaryDark;
         text-align: center;
@@ -44,7 +46,7 @@
 .hamburgerBar {
     display: block;
     background-color: $DarkColor;
-    width: 25px;
+    width: 30px;
     height: 3px;
     margin: 5px auto;
 }
