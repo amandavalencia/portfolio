@@ -18,10 +18,10 @@
         justify-content: space-around;
         align-items: center;
         position: fixed;
+        padding-top: 20px;
         list-style: none;
         left: -100%;
-        top: 81px;
-        gap: 0;
+        top: 0px;
         background-color: $secondaryDark;
         text-align: center;
         z-index: 2;
@@ -54,6 +54,7 @@
 
 .hamburger {
     display: block;
+    z-index: 3;
 }
 
 .hamburger.active .hamburgerBar:nth-child(2) {
@@ -79,7 +80,7 @@
       }
       .navBar{
         background-color: rgba(218,222,212,1);
-        position: relative;
+        margin: -100px;
       .navMenu{
         display: flex;
         flex-direction: row;
@@ -90,5 +91,6 @@
         opacity: 0.8;
       }
      }
+
 
 }
