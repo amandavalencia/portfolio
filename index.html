@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
   </head>
+  <body>
+  <header>
     <nav class="navBar">
       <ul class="navMenu">
-        <li class="navItem"><a href="#" class="navLink">Om mig</a></li>
-        <li class="navItem"><a href="#" class="navLink">Mina Projekt</a></li>
-        <li class="navItem"><a href="#" class="navLink">?</a></li>
-        <li class="navItem"><a href="#" class="navLink">?</a></li>
+        <li class="navItem"><a href="#firstPage" class="navLink">Första sidan</a></li>
+        <li class="navItem"><a href="#secondPage" class="navLink">Mina Projekt</a></li>
+        <li class="navItem"><a href="#thirdPage" class="navLink">Om mig</a></li>
+        <li class="navItem"><a href="#fourthPage" class="navLink">Kontakt</a></li>
       </ul>
       <div class="hamburger">
         <span class="hamburgerBar"></span>
@@ -19,10 +21,11 @@
         <span class="hamburgerBar"></span>
       </div>
     </nav>
-  <body>
+  </header>
+
     <div class="container">
 
-    <section class="section section__firstPage">
+    <section class="section section__firstPage" id="firstPage">
       <div id="nameHeader">
         <h2 class="greenHeader h2header">Hello,</h2>
       <h1 id="myName">I'M Amanda Valencia</h1>
@@ -33,14 +36,18 @@
       </div>
     </section>
 
-    <section class="section section__secondPage">
+    <section class="section section__secondPage" id="secondPage">
       <h2>Mina project</h2>
     </section>
 
-    <section class="section section__thirdPage">
+    <section class="section section__thirdPage" id="thirdPage">
       <h2>lite om mig</h2>
     </section>
-    
+
+    <section class="section section__fourthPage" id="fourthPage">
+      <h2>Här hittar ni mig</h2>
+    </section>
+
     </div>
     <div id="app"></div>
     <script type="module" src="/src/js/main.js"></script>

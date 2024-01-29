@@ -1,0 +1,58 @@
+@import "variables";
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    transition: all 300ms ease-in-out;
+}
+
+.navBar {
+    background-color: $secondaryDark;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80px;
+    position: fixed;
+    top: 0;
+    width: 40vw;
+    border-radius: 49% 51% 100% 0% / 0% 0% 100% 100%;
+    opacity: 0.9;
+    z-index: 2;
+
+
+    .navItem {
+        padding: 10px;
+        margin: 10px 0;
+
+        .navLink {
+            color: $primaryLight;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .navLink:hover {
+            color: $primaryDark;
+            text-decoration: none;
+        }
+    }
+
+}
+
+@media (min-width: $tablets) {
+    .navBar {
+        background-color: rgba(218, 222, 212, 1);
+        margin: -100px;
+
+        .navMenu {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            position: fixed;
+            left: 0;
+            top: 0;
+            opacity: 0.8;
+        }
+    }
+}
